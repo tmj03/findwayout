@@ -20,7 +20,7 @@ async function main() {
     k.add(
       makeNotificationBox(
         k,
-        "You escaped the factory!\n The End. Thanks for playing!"
+        "Bạn đã trốn thoát khỏi nhà máy!\n Kết thúc. Cảm ơn bạn đã chơi!"
       )
     );
   });
@@ -31,11 +31,11 @@ k.scene("intro", () => {
   k.add(
     makeNotificationBox(
       k,
-      "Escape the factory!\nUse arrow keys to move, x to jump, z to attack.\nPress Enter to start!"
+      "Trốn thoát khỏi nhà máy!\nDùng phím mũi tên để di chuyển, nhảy, z để tấn công.\nNhấn Enter để bắt đầu!"
     )
   );
   k.onKeyPress("enter", () => {
-    // makes audio will be enabled before the game starts
+    // kích hoạt âm thanh trước khi bắt đầu trò chơi
     const context = new AudioContext();
     context.resume();
     k.go("room1", { exitName: null });
